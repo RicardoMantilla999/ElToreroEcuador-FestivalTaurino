@@ -1,0 +1,648 @@
+ /* CSS necesario para replicar el diseño */
+ body {
+     font-family: sans-serif;
+     background-color: #f7f7f5;
+ }
+
+ .contenedor-programa {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 40px 20px;
+     
+ }
+
+ .titulo-seccion {
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: 700;
+     color: #8b3a3a;
+     margin-bottom: 30px;
+     margin: 40px  20px;
+ }
+
+ /* Contenedor Flex para las dos columnas */
+ .columnas-info {
+     display: flex;
+     max-width: 900px;
+     margin: 0 auto;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .columna {
+     flex: 1;
+     min-width: 300px;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Detalles (Rojo) */
+ .detalles-header {
+     background-color: #a43030;
+     color: white;
+     padding: 15px 20px;
+     font-size: 1.3em;
+     font-weight: 500;
+ }
+
+ .detalles-cuerpo {
+     padding: 20px;
+     background-color: white;
+ }
+
+ .detalle-item {
+     display: flex;
+     align-items: flex-start;
+     margin-bottom: 15px;
+ }
+
+ .detalle-item i {
+     color: #a43030;
+     font-size: 1.2em;
+     margin-right: 15px;
+     padding-top: 2px;
+ }
+
+ .info-label {
+     font-weight: 500;
+     display: block;
+ }
+
+ /* Precios (Naranja) */
+ .precios-header {
+     background-color: #e68a00;
+     color: white;
+     padding: 15px 20px;
+     font-size: 1.3em;
+     font-weight: 500;
+ }
+
+ .precios-cuerpo {
+     padding: 20px;
+     background-color: white;
+ }
+
+ .ticket-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+ }
+
+ /* Colores de los Tickets */
+ .general {
+     background-color: #e6ffe6;
+     border: 1px solid #c9ffc9;
+ }
+
+ .vip {
+     background-color: #e0f2ff;
+     border: 1px solid #c6e6ff;
+ }
+
+ .premium {
+     background-color: #f7e0ff;
+     border: 1px solid #ecc9ff;
+ }
+
+ /* Estilos de Precios */
+ .ticket-precio {
+     font-size: 1.4em;
+     font-weight: 700;
+     padding: 5px 10px;
+     min-width: 60px;
+     text-align: right;
+ }
+
+ .precio-verde {
+     color: #28a745;
+ }
+
+ .precio-azul {
+     color: #007bff;
+ }
+
+ .precio-morado {
+     color: #9c27b0;
+ }
+
+ .nota-impuestos {
+     text-align: right;
+     font-size: 0.85em;
+     color: #666;
+     margin-top: 15px;
+ }
+
+ @media (max-width: 768px) {
+     .columnas-info {
+         flex-direction: column;
+     }
+ }
+
+ /* Contenedor Flex para las dos columnas */
+ .columnas-info {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .columna {
+     flex: 1;
+     min-width: 300px;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     background-color: white;
+ }
+
+ 
+
+ .programa-header {
+     background-color: #a43030;
+     color: white;
+     padding: 15px 20px;
+     font-size: 1.3em;
+     font-weight: 500;
+ }
+
+ .programa-header i {
+     margin-right: 10px;
+ }
+
+ .programa-cuerpo {
+     padding: 0 20px;
+ }
+
+ /* Padding horizontal para los ítems */
+
+ .evento-item {
+     padding: 15px 0;
+     border-bottom: 1px solid #eee;
+     /* Línea separadora */
+     display: flex;
+     align-items: center;
+     /* Alinea verticalmente la hora con el texto */
+ }
+
+ .evento-item:last-child {
+     border-bottom: none;
+ }
+
+ /* Sin línea en el último elemento */
+
+ .evento-hora {
+     font-size: 1.0em;
+     /* Tamaño de fuente para la hora dentro de la caja */
+     font-weight: 700;
+     color: #a43030;
+     /* Color del texto de la hora y del borde */
+
+     /* ESTILOS PARA LA CAJA DE LA HORA */
+     min-width: 65px;
+     /* Ajuste del ancho para que se vea bien */
+     text-align: center;
+     /* Centrar el texto '19:00' dentro de la caja */
+     padding: 5px 8px;
+     /* Relleno interior para la caja */
+     background-color: #fcebeb;
+     /* Fondo rosado muy claro */
+     border: 1px solid #a43030;
+     /* Borde de 1px sólido rojo */
+     border-radius: 8px;
+     /* Bordes redondeados */
+
+     margin-right: 15px;
+     /* Espacio a la derecha de la caja de la hora */
+     box-sizing: border-box;
+     /* Asegura que padding y border no aumenten el ancho total */
+ }
+
+ .evento-detalle .titulo {
+     font-weight: 500;
+     font-size: 1.05em;
+     color: #333;
+     margin-bottom: 3px;
+ }
+
+ .evento-detalle .descripcion {
+     font-size: 0.9em;
+     color: #666;
+ }
+
+ /* --- Columna de Premios (Naranja Oscuro) --- */
+ .premios-columna {
+     background-color: white;
+     border: 1px solid #e0e0e0;
+     /* Un borde sutil como en la otra sección */
+ }
+
+ .premios-header {
+     background-color: #e68a00;
+     color: white;
+     padding: 15px 20px;
+     font-size: 1.3em;
+     font-weight: 500;
+ }
+
+ .premios-header i {
+     margin-right: 10px;
+ }
+
+ .premios-cuerpo {
+     padding: 20px;
+ }
+
+ .premio-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding: 15px 0;
+     border-bottom: 1px solid #eee;
+ }
+
+ .premio-item:last-of-type {
+     border-bottom: none;
+ }
+
+ /* El último item de premio antes de la premiación */
+
+ .premio-info .nombre {
+     font-weight: 500;
+     font-size: 1.1em;
+     color: #333;
+ }
+
+ .premio-info .detalle {
+     font-size: 0.9em;
+     color: #666;
+     margin-top: 3px;
+ }
+
+ .premio-monto {
+     font-size: 1.1em;
+     font-weight: 700;
+     color: #28a745;
+     /* Color del texto del monto */
+     padding: 5px 10px;
+     border-radius: 4px;
+     min-width: 60px;
+     text-align: right;
+     background-color: #e6ffe6;
+     /* Fondo verde muy claro */
+     border: 1px solid #c9ffc9;
+     /* Borde verde claro */
+ }
+
+ /* Estilo específico para Trofeo Anniversary (ajustado para la imagen) */
+ .trofeo-anniversary .premio-monto {
+     background-color: #e6ffe6;
+     /* Fondo igual */
+     color: #28a745;
+     /* Color de texto igual */
+     border: 1px solid #c9ffc9;
+     /* Borde igual */
+ }
+
+ /* Sección de Premiación/Nota */
+ .premiacion {
+     padding-top: 20px;
+     margin-top: 20px;
+     border-top: 1px solid #f0f0f0;
+     background-color: #fff9e6;
+     /* Fondo amarillo claro */
+     border: 1px solid #ffeeba;
+     /* Borde amarillo claro */
+     padding: 15px;
+     border-radius: 5px;
+     display: flex;
+     align-items: flex-start;
+ }
+
+ .premiacion i {
+     color: #e68a00;
+     /* Icono en naranja */
+     margin-right: 10px;
+     font-size: 1.2em;
+     padding-top: 2px;
+     /* Alineación vertical */
+ }
+
+ .premiacion .contenido-texto {
+     flex-grow: 1;
+ }
+
+ .premiacion .titulo-nota {
+     font-weight: 500;
+     font-size: 1.1em;
+     margin-bottom: 5px;
+     color: #333;
+ }
+
+ .premiacion .texto-nota {
+     font-size: 0.9em;
+     color: #666;
+ }
+
+
+ /* Media Queries para responsividad */
+ @media (max-width: 768px) {
+     .columnas-info {
+         flex-direction: column;
+     }
+
+     .columna {
+         min-width: 100%;
+     }
+ }
+
+ /* Contenedor principal de la historia */
+ .contenedor-historia {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 40px 20px;
+ }
+
+ /* Título de la sección */
+ .titulo-historia {
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: 700;
+     color: #8b3a3a;
+     /* Color rojo similar al de los otros títulos */
+     margin-bottom: 30px;
+ }
+
+ /* Contenedor de la Misión/Visión central */
+ .mision-container {
+     background-color: white;
+     padding: 30px;
+     margin-bottom: 40px;
+     border-radius: 10px;
+     text-align: center;
+     border: 1px solid #f0f0f0;
+     /* Borde sutil */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+ }
+
+ .mision-container i {
+     color: #e68a00;
+     /* Color naranja de la insignia */
+     font-size: 2.5em;
+     margin-bottom: 15px;
+ }
+
+ .mision-texto {
+     font-size: 1.1em;
+     color: #555;
+     margin-bottom: 15px;
+ }
+
+ .fundacion-tag {
+     display: inline-block;
+     background-color: #fcebeb;
+     /* Fondo rosado claro */
+     color: #a43030;
+     /* Texto rojo oscuro */
+     font-weight: 500;
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-size: 0.85em;
+ }
+
+ /* Contenedor de la línea de tiempo (las tarjetas) */
+ .timeline-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     /* Dos columnas */
+     gap: 20px;
+     /* Espacio entre las tarjetas */
+ }
+
+ /* Estilo base para cada tarjeta */
+ .timeline-card {
+     background-color: #fffdf7;
+     /* Fondo amarillento muy claro */
+     border: 1px solid #ffeeba;
+     /* Borde amarillo claro */
+     border-radius: 8px;
+     padding: 20px;
+     min-height: 120px;
+     /* Asegura un tamaño mínimo uniforme */
+ }
+
+ /* Etiqueta de Año (2021, 2022, etc.) */
+ .card-year {
+     display: inline-block;
+     background-color: #e68a00;
+     /* Naranja oscuro */
+     color: white;
+     font-weight: 700;
+     padding: 4px 10px;
+     border-radius: 5px;
+     font-size: 0.9em;
+     margin-bottom: 10px;
+ }
+
+ /* Título del Hito (Fundación, Primer Festival, etc.) */
+ .card-title {
+     font-weight: 700;
+     font-size: 1.1em;
+     color: #333;
+     margin-bottom: 8px;
+ }
+
+ /* Contenido del Hito */
+ .card-description {
+     font-size: 0.95em;
+     color: #555;
+     line-height: 1.4;
+ }
+
+ /* Media Queries para responsividad */
+ @media (max-width: 768px) {
+     .timeline-grid {
+         grid-template-columns: 1fr;
+         /* Una sola columna en móvil */
+     }
+
+     .timeline-card {
+         min-height: auto;
+     }
+ }
+
+ .seccion-contacto {
+     background-color: #a43030;
+     /* Fondo rojo oscuro */
+     padding-bottom: 50px;
+     /* Espacio para que las tarjetas sobresalgan */
+ }
+
+ /* Título de la sección */
+ .titulo-contacto {
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: 700;
+     color: white;
+     /* Texto blanco en el fondo rojo */
+     padding: 40px 20px 20px;
+     margin-top: 0;
+ }
+
+ /* Contenedor de las tres tarjetas/columnas */
+ .contenedor-tarjetas {
+     display: flex;
+     max-width: 1100px;
+     margin: 0 auto;
+     gap: 20px;
+     padding: 0 20px;
+     /* Esta propiedad mueve las tarjetas hacia arriba */
+     transform: translateY(20px);
+     flex-wrap: wrap;
+     /* Para que se apilen en pantallas pequeñas */
+ }
+
+ /* Estilo base para cada tarjeta */
+ .tarjeta-contacto {
+     flex: 1;
+     /* Ocupa el mismo espacio */
+     min-width: 250px;
+     /* Ancho mínimo para evitar que se aplasten */
+     background-color: white;
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Encabezado de cada tarjeta (iconos + texto) */
+ .tarjeta-header {
+     font-size: 1.2em;
+     font-weight: 700;
+     color: #555;
+     margin-bottom: 20px;
+     display: flex;
+     align-items: center;
+ }
+
+ .tarjeta-header i {
+     color: #a43030;
+     /* Iconos en color rojo */
+     margin-right: 10px;
+     font-size: 1.3em;
+ }
+
+ /* Estilos para el contenido de las tarjetas */
+ .tarjeta-contenido p {
+     margin: 8px 0;
+     font-size: 1em;
+     color: #333;
+     /* Añadir espacio a la izquierda para el contenido de las tarjetas 2 y 3 */
+     padding-left: 30px;
+ }
+
+ /* Estilos específicos para los enlaces de contacto directo */
+ .tarjeta-contenido a {
+     color: #a43030;
+     /* Color rojo para el email y teléfono */
+     text-decoration: none;
+     font-weight: 500;
+     display: block;
+     /* Para que cada uno ocupe su propia línea */
+     padding-left: 30px;
+ }
+
+ .tarjeta-contenido a:hover {
+     text-decoration: underline;
+ }
+
+ /* Estilos específicos para los enlaces de redes sociales */
+ .red-social {
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+     text-decoration: none;
+     color: #333;
+     font-weight: 500;
+     padding-left: 30px;
+ }
+
+ .red-social i {
+     margin-right: 8px;
+     font-size: 1.2em;
+     min-width: 20px;
+ }
+
+ .facebook i {
+     color: #3b5998;
+ }
+
+ .instagram i {
+     color: #e1306c;
+ }
+
+ .twitter i {
+     color: #1da1f2;
+ }
+
+ /* Media Queries para responsividad */
+ @media (max-width: 850px) {
+     .contenedor-tarjetas {
+         flex-direction: column;
+         transform: translateY(0);
+         /* Desactivar el 'sobresalir' en móvil */
+         padding: 20px;
+     }
+
+     .seccion-contacto {
+         padding-bottom: 20px;
+     }
+ }
+
+ /* Contenedor principal del Footer */
+ .main-footer {
+     background-color: #1a1a1a;
+     /* Fondo negro oscuro similar al de la imagen */
+     color: white;
+     /* Color base del texto */
+     padding: 20px 20px;
+     text-align: center;
+ }
+
+ /* Contenedor del Logo/Título */
+ .footer-logo {
+     margin-bottom: 20px;
+     display: inline-flex;
+     /* Permite alinear el ícono y el texto */
+     align-items: center;
+ }
+
+ /* Estilo del ícono (Corona) */
+ .footer-logo i {
+     color: #ffb800;
+     /* Color dorado/amarillo */
+     font-size: 1.5em;
+     margin-right: 10px;
+ }
+
+ /* Estilo del Nombre */
+ .footer-logo span {
+     font-size: 1.5em;
+     font-weight: 700;
+ }
+
+ /* Eslogan/Misión */
+ .footer-slogan {
+     font-size: 1.1em;
+     color: #b0b0b0;
+     /* Gris oscuro para el eslogan */
+     margin-bottom: 15px;
+ }
+
+ /* Copyright */
+ .footer-copyright {
+     font-size: 0.9em;
+     color: #888888;
+     /* Gris más oscuro para el copyright */
+ }

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Torero Ecuador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <section>
+        <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="styles/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                <a class="navbar-brand mb-0 h1" href="#inicio">El Torero Ecuador</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#evento">Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#historia">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section id="inicio">
+        <div
+            style="background-image: url('styles/logo.png');  background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; font-family: Arial, sans-serif;">
+
+            <div
+                style="background-color: orange; padding: 6px 12px; border-radius: 5px; margin-bottom: 20px; font-weight: bold;">
+                3er Aniversario
+            </div>
+
+            <h1 class="titulo-seccion" style="font-size: 3rem; margin: 10px 0;">El Torero Ecuador</h1>
+            <div class="titulo-seccion" style="font-size: 1.5rem; margin-bottom: 20px;">Festival Taurino</div>
+
+            <div>
+                <span style="display: block; margin: 5px 0;">📅 2 de Noviembre, 2025</span>
+            </div>
+
+            <a href="#"
+                style="background-color: orange; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 30px; display: inline-block;">
+                Obtener Entradas
+            </a>
+            <section id="cuenta-regresiva"
+                style="background-color: #8b1d1d; color: white; text-align: center; padding: 50px 20px; font-family: Arial, sans-serif;">
+                <h2 style="font-size: 2rem; margin-bottom: 10px;">Cuenta Regresiva</h2>
+                <p style="margin-bottom: 30px;">Faltan para el gran festival taurino</p>
+
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <div
+                        style="background: white; color: #8b1d1d; padding: 20px; border-radius: 10px; min-width: 120px;">
+                        <h3 id="dias" style="margin: 0; font-size: 2rem;">00</h3>
+                        <span style="font-weight: bold;">DÍAS</span>
+                    </div>
+                    <div
+                        style="background: white; color: #8b1d1d; padding: 20px; border-radius: 10px; min-width: 120px;">
+                        <h3 id="horas" style="margin: 0; font-size: 2rem;">00</h3>
+                        <span style="font-weight: bold;">HORAS</span>
+                    </div>
+                    <div
+                        style="background: white; color: #8b1d1d; padding: 20px; border-radius: 10px; min-width: 120px;">
+                        <h3 id="minutos" style="margin: 0; font-size: 2rem;">00</h3>
+                        <span style="font-weight: bold;">MINUTOS</span>
+                    </div>
+                    <div
+                        style="background: white; color: #8b1d1d; padding: 20px; border-radius: 10px; min-width: 120px;">
+                        <h3 id="segundos" style="margin: 0; font-size: 2rem;">00</h3>
+                        <span style="font-weight: bold;">SEGUNDOS</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="evento">
+
+        <h1 class="titulo-seccion">Información del Evento</h1>
+
+        <div class="columnas-info">
+
+            <div class="columna">
+                <div class="detalles-header">
+                    <i class="fas fa-calendar-alt"></i> Detalles del Festival
+                </div>
+                <div class="detalles-cuerpo">
+
+                    <div class="detalle-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <div>
+                            <span class="info-label">Fecha</span>
+                            <span>Sábado, 2 de Noviembre 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="detalle-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <span class="info-label">Hora</span>
+                            <span>10:00 - 19:00</span>
+                        </div>
+                    </div>
+
+                    <div class="detalle-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="info-label">Ubicación</span>
+                            <span>Plaza de Toros Quito<br>Av. de los Granados y Eloy Alfaro, Quito, Ecuador</span>
+                        </div>
+                    </div>
+
+                    <div class="detalle-item" style="margin-top: 25px; align-items: center;">
+                        <i class="fas fa-users"></i>
+                        <span style="font-size: 1.1em; font-weight: 500;">Capacidad: 8000 personas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columna">
+                <div class="precios-header">
+                    <i class="fas fa-dollar-sign"></i> Precios de Entradas
+                </div>
+                <div class="precios-cuerpo">
+
+                    <div class="ticket-item general">
+                        <div>
+                            <div style="font-weight: 500; font-size: 1.1em;">Entrada General</div>
+                            <div style="font-size: 0.9em; color: #666;">Localidades populares</div>
+                        </div>
+                        <div class="ticket-precio precio-verde">$25</div>
+                    </div>
+
+                    <div class="ticket-item vip">
+                        <div>
+                            <div style="font-weight: 500; font-size: 1.1em;">Entrada VIP</div>
+                            <div style="font-size: 0.9em; color: #666;">Localidades preferentes</div>
+                        </div>
+                        <div class="ticket-precio precio-azul">$60</div>
+                    </div>
+
+                    <div class="ticket-item premium">
+                        <div>
+                            <div style="font-weight: 500; font-size: 1.1em;">Palco Premium</div>
+                            <div style="font-size: 0.9em; color: #666;">Experiencia exclusiva</div>
+                        </div>
+                        <div class="ticket-precio precio-morado">$120</div>
+                    </div>
+
+                    <p class="nota-impuestos">* Precios incluyen impuestos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-programa">
+            <h1 class="titulo-seccion">Programación y Premios</h1>
+
+            <div class="columnas-info">
+                <div class="columna programa-columna">
+                    <div class="programa-header">
+                        <i class="far fa-clock"></i> Programa del Día
+                    </div>
+                    <div class="programa-cuerpo">
+
+                        <div class="evento-item">
+                            <div class="evento-hora">14:00</div>
+                            <div class="evento-detalle">
+                                <div class="titulo">Apertura de puertas</div>
+                                <div class="descripcion">Recepción del público y ubicación en localidades</div>
+                            </div>
+                        </div>
+
+                        <div class="evento-item">
+                            <div class="evento-hora">15:00</div>
+                            <div class="evento-detalle">
+                                <div class="titulo">Desfile inaugural</div>
+                                <div class="descripcion">Presentación de toreros y cuadrillas</div>
+                            </div>
+                        </div>
+
+                        <div class="evento-item">
+                            <div class="evento-hora">15:30</div>
+                            <div class="evento-detalle">
+                                <div class="titulo">Primer toro</div>
+                                <div class="descripcion">Torero: Carlos Mendoza "El Ecuatoriano"</div>
+                            </div>
+                        </div>
+
+                        <div class="evento-item">
+                            <div class="evento-hora">16:15</div>
+                            <div class="evento-detalle">
+                                <div class="titulo">Segundo toro</div>
+                                <div class="descripcion">Torero: Miguel Ángel Torres</div>
+                            </div>
+                        </div>
+
+                        <div class="evento-item" style="border-bottom: none;">
+                            <div class="evento-hora">17:00</div>
+                            <div class="evento-detalle">
+                                <div class="titulo">Intermedio</div>
+                                <div class="descripcion">Presentación de música folclórica</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="columna premios-columna">
+                    <div class="premios-header">
+                        <i class="fas fa-trophy"></i> Premios
+                    </div>
+                    <div class="premios-cuerpo">
+
+                        <div class="premio-item">
+                            <div class="premio-info">
+                                <div class="nombre">Mejor Faena</div>
+                                <div class="detalle">Al torero con la mejor actuación de la tarde</div>
+                            </div>
+                            <div class="premio-monto">$3,000</div>
+                        </div>
+
+                        <div class="premio-item trofeo-anniversary">
+                            <div class="premio-info">
+                                <div class="nombre">Trofeo Anniversary</div>
+                                <div class="detalle">Premio especial del 3er aniversario</div>
+                            </div>
+                            <div class="premio-monto">Trofeo + $2,000</div>
+                        </div>
+
+                        <div class="premio-item" style="border-bottom: none;">
+                            <div class="premio-info">
+                                <div class="nombre">Mejor Quite</div>
+                                <div class="detalle">A la mejor demostración de quite</div>
+                            </div>
+                            <div class="premio-monto">$1,500</div>
+                        </div>
+
+                        <div class="premiacion">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="contenido-texto">
+                                <div class="titulo-nota">Premiación</div>
+                                <div class="texto-nota">Los premios serán entregados al final del evento por el jurado
+                                    oficial.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="historia">
+        <div class="contenedor-historia">
+            <h1 class="titulo-historia">Nuestra Historia</h1>
+
+            <div class="mision-container">
+                <i class="fas fa-medal"></i>
+
+                <p class="mision-texto">
+                    Promover y preservar la tradición taurina en Ecuador
+                </p>
+
+                <div class="fundacion-tag">
+                    Fundado en 2021
+                </div>
+            </div>
+
+            <div class="timeline-grid">
+
+                <div class="timeline-card">
+                    <div class="card-year">2021</div>
+                    <div class="card-title">Fundación</div>
+                    <div class="card-description">
+                        Creación de El Torero Ecuador como plataforma digital taurina
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-year">2022</div>
+                    <div class="card-title">Primer Festival</div>
+                    <div class="card-description">
+                        Organización exitosa del primer festival con 5,000 asistentes
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-year">2023</div>
+                    <div class="card-title">Expansión Nacional</div>
+                    <div class="card-description">
+                        Cobertura de eventos taurinos en Quito, Guayaquil y Cuenca
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-year">2024</div>
+                    <div class="card-title">3er Aniversario</div>
+                    <div class="card-description">
+                        Festival más grande con toreros internacionales
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="seccion-contacto">
+            <h2 class="titulo-contacto">Contacto</h2>
+
+            <div class="contenedor-tarjetas">
+
+                <div class="tarjeta-contacto">
+                    <div class="tarjeta-header">
+                        <i class="fas fa-phone-alt"></i> Contacto Directo
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <a href="mailto:info@eltoreroecuador.com">info@eltoreroecuador.com</a>
+                        <a href="tel:+593987654321">+593 98 765 4321</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-contacto">
+                    <div class="tarjeta-header">
+                        <i class="fas fa-map-marker-alt"></i> Oficina
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <p>Av. 12 de Octubre N24-593, Quito, Ecuador</p>
+                        <p>Lunes a Viernes: 9:00 - 17:00</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-contacto">
+                    <div class="tarjeta-header">
+                        <i class="fas fa-share-alt"></i> Redes Sociales
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <a href="#" class="red-social facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="#" class="red-social instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="red-social twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <i class="fas fa-crown"></i> <span>El Torero Ecuador</span>
+        </div>
+
+        <p class="footer-slogan">
+            Preservando la tradición taurina ecuatoriana
+        </p>
+
+        <p class="footer-copyright">
+            © 2025 El Torero Ecuador. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
